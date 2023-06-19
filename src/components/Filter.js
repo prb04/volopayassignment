@@ -33,7 +33,7 @@ const Filter = ({ setFilterType, handleSearchChange, value }) => {
         <GrFilter size={20} />
       </div>
       {selectedType && (
-        <div className="absolute z-30 top-full right-0 max-w-[320px] w-full bg-white shadow-lg">
+        <div className="absolute z-50 rounded-lg top-full right-0 max-w-[320px] w-full bg-white shadow-lg">
           <div className="flex flex-col gap-2 mx-5 my-2">
             <span className="font-bold text-gray-600">Filters</span>
             <hr />
@@ -74,7 +74,7 @@ const Filter = ({ setFilterType, handleSearchChange, value }) => {
                 <option value="2">All</option>
               </select>
             </div>
-            <div className="flex items-center gap-3 mt-4">
+            <div className="flex items-center gap-3 mt-4 mb-3">
               <button
                 onClick={handleApply}
                 className="w-full px-2 text-white rounded-md bg-rose-600"
